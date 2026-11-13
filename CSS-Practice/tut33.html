@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        :root {
+            --bg-desktop: #1e1e1e;
+            --accent-color: #ff3e3e;
+            --text-desktop: #ffffff;
+        }
+
+        body {
+            background-color: #1e1e1e;
+            color: var(--text-desktop);
+            font-family: sans-serif;
+            padding: 30px;
+        }
+
+        .responsive-card {
+            background-color: var(--bg-desktop);
+            border: 2px solid var(--accent-color);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .heading {
+            font-size: 2rem;
+            color: var(--accent-color);
+        }
+
+        /* 1. Tablet view (max width: 768px) */
+        @media(max-width: 768px) {
+            .responsive-card {
+                background-color: #373750;
+                border-color: #00abd5;
+            }
+
+            .heading {
+                font-size: 1.5rem;
+                color: #00abd5;
+            }
+        }
+
+        /* 2. Mobile view (max width: 480px) */
+        @media(max-width:480px) {
+            .responsive-card {
+                background-color: #798597;
+                border-color: #ff3e3e;
+                padding: 15px;
+            }
+
+            .heading {
+                font-size: 1.2rem;
+                color: #ffc107;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="responsive-card">
+        <h1 class="heading">Device Screen Test</h1>
+        <p class="description">Try resizing your browser window!</p>
+    </div>
+</body>
+
+</html>

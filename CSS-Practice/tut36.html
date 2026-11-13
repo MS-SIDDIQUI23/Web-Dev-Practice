@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            height: 150px;
+            background-color: #1e1e1e;
+            border: 3px solid #ff3e3e;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            align-items: center;
+            border-radius: 6px;
+            border: 1px solid #555;
+        }
+
+        /* Flex Child Properties */
+        .box1 {
+            flex-grow: 1;
+            background-color: #00abd5;
+        }
+
+        .box2 {
+            flex-grow: 2;
+            background-color: #ffc107;
+            color: #000;
+        }
+
+        .box3 {
+            align-self: flex-end;
+            background-color: #ff3e3e;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Flexbox Alignment Test</h2>
+    <div class="flex-container">
+        <div class="box box1">1 (Grow 1)</div>
+        <div class="box box2">2 (Grow 2)</div>
+        <div class="box box3">(Center Self)</div>
+    </div>
+</body>
+
+</html>

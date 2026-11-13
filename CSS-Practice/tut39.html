@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition property</title>
+    <style>
+        /* transition: property duration timing-function delay; (Shorthand keys)*/
+        /* Example: */
+        /* transition: all 0.4s ease-in-out 0.1s; */
+        body {
+            background: #121212;
+            color: white;
+            font-family: sans-serif;
+            padding: 40px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .box {
+            width: 150px;
+            height: 50px;
+            background-color: #333;
+            border: 2px solid #555;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+            font-weight: bold;
+        }
+
+        /* Hover par width bari hogi aur background change hoga */
+        .box:hover {
+            width: 250px;
+            background-color: #00abd5;
+            border-color: #00abd5;
+            color: #fff;
+        }
+
+        /* 1. Linear: poori animation ek hi constant speed se chalti hai */
+        .linear-box {
+            transition: width 1s linear, background-color 1s linear;
+        }
+
+        /* 2. Ease (Default): shuru mein slow, beech mein fast, end mein slow */
+        .ease-box {
+            transition: width 1s ease, background-color 1s ease;
+        }
+
+        /* 3. Ease-In-Out: shuru aur end dono taraf se bohot smooth aur gradual hoti hai */
+        .ease-in-out-box {
+            transition: width 1s ease-in-out, background-color 1s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Transition property</h2>
+    <div class="container">
+        <div class="box">Transtion Box</div>
+        <div class="box linear-box">Linear Box</div>
+        <div class="box ease-box">Ease Box</div>
+        <div class="box ease-in-out-box">Ease-in-out Box</div>
+    </div>
+</body>
+
+</html>

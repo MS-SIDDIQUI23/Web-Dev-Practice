@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Advanced Selectors</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        /* 1.Direct child selector */
+        .container>p {
+            color: #ff3e3e;
+        }
+
+        /* 2. Adjacent Sibling Selector (+): Highlight ke FORAN baad wala p */
+        .highlight+p {
+            background-color: #333;
+            padding: 5px;
+        }
+
+        /* 3. Pseudo-class :nth-child(even/odd) */
+        ul li:nth-child(even) {
+            color: #00abd5;
+        }
+
+        ul li:nth-child(odd) {
+            color: #ffc107;
+        }
+
+        /* 4. Pseudo-class :not() */
+        .container p:not(.highlight) {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Main heading</h2>
+        <p>First paragraph (Direct child)</p>
+        <div class="inner-box">
+            <p>Nested paragraph (Descendant)</p>
+        </div>
+        <p class="highlight">Highlight paragraph</p>
+        <p>First sibling paragraph</p>
+        <p>Second sibling paragraph</p>
+
+        <ul>
+            <li>First list item</li>
+            <li>Second list item</li>
+            <li>Third list item</li>
+            <li>Fourth list item</li>
+        </ul>
+    </div>
+</body>
+
+</html>

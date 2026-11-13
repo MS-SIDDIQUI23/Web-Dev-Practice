@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        .grid-container {
+            display: grid;
+            /* 3 equal columns banayenge */
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            background-color: #1f1f1f;
+            border: 3px solid #ff3e3e;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .card {
+            background-color: #333;
+            font-weight: bold;
+            padding: 20px;
+            text-align: center;
+            border-radius: 6px;
+            border: 1px solid #555;
+        }
+
+        /* Specific Grid Item Spanning */
+        .card1 {
+            /* Pehli column se le kar 4th grid line tak phel jao (Poori Row) */
+            grid-column: 1 / 4;
+            background-color: #00abd5;
+        }
+
+        .card5 {
+            /* Pehli column se le kar 4th grid line tak phel jao (Poori Row) */
+            grid-column: 1 / 4;
+            background-color: #ff3e3e;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Class 2D Grid Layout Test</h2>
+    <div class="grid-container">
+        <div class="card card1">Header (Span 3)</div>
+        <div class="card">Sidebar</div>
+        <div class="card">Main Content</div>
+        <div class="card">Widget</div>
+        <div class="card card5">Footer (Span 3)</div>
+    </div>
+</body>
+
+</html>

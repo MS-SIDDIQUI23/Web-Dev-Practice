@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* This is Element selector */
+        span{
+            font-style: italic; font-size: 40px; color: blue; background-color: burlywood; border: 2px solid red;
+        }
+        /* This is ID selector */
+        #Firstpara{
+            font-size:30px; font-style: italic; border: 3px solid black; color: black; background-color: pink;
+        }
+        /* THis is Grouping selector With Class selector */
+        .Secondpara, p, footer{
+            font-style: italic; font-size: 20px; border: 2px solid red;  color: white; background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <span>CSS Selectors</span>
+    <p id="Firstpara">This is a simple paragraph to demonstrate CSS Selectors</p>
+    <p class="Secondpara">This is a another paragraph to demonstrate CSS Selectors</p>
+    <div>
+        <p>This is a yet paragraph inside div to demonstrate CSS Selectors</p>
+    </div>
+    <footer>This is footer</footer>
+
+</body>
+</html>

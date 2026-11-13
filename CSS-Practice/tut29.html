@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadow And Outlines</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        .shadow-box {
+            width: 250px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            text-align: center;
+            /* Task 1: Box Shadow */
+            box-shadow: 5px 10px 15px rgba(255, 62, 62, 0.4);
+        }
+
+        .glow-text {
+            font-size: 24px;
+            /* Task 2: Text Shadow */
+            text-shadow: 2px 2px 8px #ff3e3e;
+        }
+
+        .outline-btn {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            cursor: pointer;
+            /* Task 3: Outline & offset */
+            outline: 2px dashed #ff3e3e;
+            outline-offset: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shadow-box">
+        <h1 class="glow-text">Fitness Hungry</h1>
+    </div>
+    <button class="outline-btn">Hover / Focus Me</button>
+</body>
+
+</html>

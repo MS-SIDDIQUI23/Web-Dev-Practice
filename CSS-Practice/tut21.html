@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors & more designing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Smooch+Sans:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(26, 24, 24);
+        }
+        h2{
+            text-align: center;
+            width: 100%;
+        }
+        .container{
+            font-size: 25px;
+            border: 4px solid rgb(0, 0, 3);
+            background-color: rgb(135, 211, 211);
+            padding: 35px;
+            margin: 35px auto;
+            width: 650px;
+            border-radius: 10px;
+            font-family: "Smooch Sans", sans-serif;
+        }
+        a{
+            text-decoration:none;
+            color: rgb(255, 255, 255);
+        }
+        a:visited{
+            background-color: rgb(27, 32, 27);
+        }
+        a:hover{
+            color: rgb(255, 255, 255);
+            background-color: rgb(27, 32, 27);
+        }
+        a:active{
+            background-color: darkblue;
+        }
+        .btn{
+            cursor: pointer;
+            font-weight: bold;
+            border: none;
+            color: white;
+            background-color: rgb(27, 32, 27);
+            padding: 8px 20px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-family: "Smooch Sans", sans-serif;
+        }
+        .btn:hover{
+            color:darkblue ;
+            background-color: rgb(0, 0, 0);
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h2>This is my Heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quod excepturi quos asperiores autem similique consequuntur soluta quasi dolore quisquam. Ut aliquam vel modi quidem aut, quasi optio laudantium mollitia iure fugiat! Nemo, corrupti.</p>
+        <a href="https://google.com" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+    
+</body>
+</html>

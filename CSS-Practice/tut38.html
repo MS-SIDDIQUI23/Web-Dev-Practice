@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms Masterclass</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .box {
+            width: 120px;
+            height: 120px;
+            background-color: #333;
+            border: 2px solid #555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: transform 0.8s ease;
+            /* Smooth animation ke liye */
+        }
+
+        /* 1. Translate Effect on Hover */
+        .translate-box:hover {
+            transform: translate(20px, -20px);
+            /* X aur Y axis par move karega */
+            background-color: #00abd5;
+            border-color: #00abd5;
+        }
+
+        /* 2. Rotate Effect on Hover */
+        .rotate-box:hover {
+            transform: rotate(45deg);
+            /* 45 degrees rotate karega */
+            background-color: #ffc107;
+            color: #000;
+            border-color: #ffc107;
+        }
+
+        /* 3. Scale Effect on Hover */
+        .scale-box:hover {
+            transform: scale(1.25);
+            /* 1.25 times bada karega */
+            background-color: #ff3e3e;
+            border-color: #ff3e3e;
+        }
+
+        /* 4. Skew Effect on Hover */
+        .skew-box:hover {
+            transform: skew(05deg, 05deg);
+            /* X aur Y axis par skew karega */
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Transforms Masterclass</h2>
+    <div class="container">
+        <div class="box translate-box">Translate</div>
+        <div class="box rotate-box">Rotate</div>
+        <div class="box scale-box">Scale</div>
+        <div class="box skew-box">Skew</div>
+    </div>
+</body>
+
+</html>

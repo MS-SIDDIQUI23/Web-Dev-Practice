@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cascade & Specificity</title>
+    <style>
+        p { 
+            /* Rule #1  */
+            /* color: red !important; */
+            color: blue;
+        }
+        p{
+            color: red;
+        }
+
+        #intro-text { 
+            /* Rule #2 */
+            /* color: violet; */
+        }
+
+        .card p { 
+            /* Rule #3 */
+            /* color: green; */
+        }
+
+        p.text-style { 
+            /* Rule #4 */
+            /* color: aqua; */
+        }
+        .parent{
+            color: red;
+        }
+        h3{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-box" class="card">
+        <p class="text-style" id="intro-text" >
+            CSS Specificity test
+        </p>
+    </div>
+    <div class="parent">
+        <h3>Hello</h3>
+    </div>
+</body>
+
+</html>

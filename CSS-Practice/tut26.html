@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÇSS Positions</title>
+    <style>
+.container {
+    display:block;
+    height: 4000px;
+    width: 100%;
+    border: 2px solid black;
+}
+.box{
+    border: 2px solid red;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+#box2{
+    position: relative;
+    left: 25px;
+}
+#box4{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+#box5{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 50%;
+}
+#box6{
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    margin-left: 100px;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+        <div class="box" id="box5">Box 5</div>
+        <div class="box" id="box6">Box 6</div>
+    </div>
+</body>
+</html>

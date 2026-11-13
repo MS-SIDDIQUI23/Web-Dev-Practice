@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Advanced Selectors (Pseudo-elements)</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        /* 1. ::before aur ::after (content property hona lazmi hai!) */
+        .gym-title::before {
+            content: "🔥 "
+        }
+
+        .gym-title::after {
+            content: " 🔥"
+        }
+
+        /* 2. ::first-letter (Drop Cap Style) */
+        .intro-text::first-letter {
+            font-size: 1.2rem;
+            color: #ff3e3e;
+            font-weight: bold;
+        }
+
+        /* 3. ::selection (Text Selection Highlight) */
+        ::selection {
+            background-color: #ff3e3e;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="gym-title">Fitness Hungry</h1>
+    <p class="intro-text">Welcome to our ultimate training center. Build your dream body with us today!</p>
+</body>
+
+</html>

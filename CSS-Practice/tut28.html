@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sizing units</title>
+    <style>
+        html {
+            font-size: 16px;
+            /*Default root font size*/
+        }
+
+        .parent {
+            font-size: 20px;
+            width: 80%;
+        }
+
+        .child-em {
+            /* Task 1 */
+            font-size: 2em;
+            /* 2 * 20px = 40px */
+            pedding: 1em;
+        }
+
+        .child-rem {
+            /* Task 2 */
+            font-size: 2rem;
+            /* 2 * 16px = 32px */
+            pedding: 1rem;
+        }
+
+        .hero-srcreen {
+            /* Task 3 */
+            width: 50vw;
+            height: 20vh;
+            background-color: steelblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        parent text (20px)
+        <div class="child-em">EM Box</div>
+        <div class="child-rem">REM Box</div>
+        <div class="hero-srcreen">Veiwport Box</div>
+    </div>
+</body>
+
+</html>

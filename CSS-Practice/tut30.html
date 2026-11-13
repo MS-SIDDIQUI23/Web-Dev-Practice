@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Lists Using CSS</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        /* Task 1: Unordered List Styling */
+        .custom-list {
+            list-style-type: square;
+            list-style-position: inside;
+            background-color: #1e1e1e;
+            padding-left: 15px;
+            border-radius: 5px;
+        }
+
+        .custom-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        /* Task 2: Ordered List Styling */
+        .alpha-list {
+            list-style-type: lower-alpha;
+            /* a, b, c, ... */
+            padding-left: 20px;
+        }
+
+        /* Pro-tip: Jab Navbars banate hain toh list-style remove karte hain */
+        /* list-style: none; */
+    </style>
+</head>
+
+<body>
+    <h2>Gym rules</h2>
+    <ul class="custom-list">
+        <li>Always wear proper gym attire.</li>
+        <li>Wipe down equipment after use.</li>
+        <li>Respect other members and their space.</li>
+        <li>Follow the posted gym rules and guidelines.</li>
+    </ul>
+    <h2>top packages</h2>
+    <ol class="alpha-list">
+        <li>Basic plans</li>
+        <li>Pro Member plans</li>
+        <li>VIP Elite plans</li>
+    </ol>
+</body>
+
+</html>

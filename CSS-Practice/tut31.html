@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Properties</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: serif;
+            padding: 30px;
+        }
+
+        .box {
+            width: 300px;
+            height: 100px;
+            background-color: #1e1e1e;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 2px solid #ff3e3e;
+        }
+
+        /* Task 1 */
+        .box-hidden {
+            overflow: hidden;
+        }
+
+        /* Task 2 */
+        .box-auto {
+            overflow: auto;
+        }
+
+        /* Task 3": Single line text ellipsis */
+        .box-text {
+            height: auto;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>1. Overflow: hidden</h2>
+    <div class="box box-hidden">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laudantium officia non expedita sit error
+        aperiam, nihil dolores magnam accusantium illum temporibus nobis distinctio eius totam doloribus veniam
+        consectetur iure?
+    </div>
+    <h2>2. Overflow: auto (scrollbar)</h2>
+    <div class="box box-auto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repellendus, dicta qui praesentium illo fuga minus
+        libero quo, consectetur deleniti mollitia ex et! Assumenda, consequatur, laboriosam cum iusto totam tempora
+        voluptatem ea, pariatur mollitia atque quibusdam. Nobis, dolorum. Illo ullam magnam odit id quidem!
+        Reprehenderit quibusdam odio aspernatur expedita similique blanditiis soluta rerum consequuntur!
+    </div>
+    <h2>3. Overflow: ellipsis</h2>
+    <div class="box box-text">
+        This is a super long gym membership title that will not fit in one line.
+    </div>
+</body>
+
+</html>

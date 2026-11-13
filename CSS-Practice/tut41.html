@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-Fit & Object-Cover</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: sans-serif;
+            padding: 40px;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .box {
+            width: 250px;
+            background-color: #1e1e1e;
+            border: 2px solid #555;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            border-radius: 6px;
+        }
+
+        /* 1. Object-Cover: Box ko poora cover karega, aspect ratio kharab nahi hogi */
+        .img-cover {
+            object-fit: cover;
+        }
+
+        /* 2. Object-Contain: Poori image dikhegi lekin box mein khali jagah reh sakti hai */
+        .img-contain {
+            object-fit: contain;
+            background-color: #aa9090;
+            /* Khali jagah wazeh karne ke liye */
+        }
+
+        /* Image ka top ya specific hissa focus karne ke liye */
+        .img-top-focus {
+            object-fit: cover;
+            object-position: top center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Object-fit & Object-cover MasterClass</h2>
+    <div class="container">
+        <div class="box">
+            <p>Cover (Best for Cards)</p>
+            <!-- Koi bhi test image ka link ya local image laga lein -->
+            <img class="img-cover" src="demo-img.jpg" alt="Sample Image">
+        </div>
+        <div class="box">
+            <p>Contain</p>
+            <img class="img-contain" src="demo-img2.jpg" alt="Sample Image">
+        </div>
+        <div class="box">
+            <p>Position</p>
+            <img class="img-top-focus" src="demo-img4.jpg" alt="Sample Image">
+        </div>
+    </div>
+</body>
+
+</html>

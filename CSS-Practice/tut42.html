@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: sans-serif;
+            padding: 40px;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .box {
+            width: 250px;
+            background-color: #1e1e1e;
+            border: 5px solid #555;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            transition: filter 0.4s ease;
+            /* Smooth transition ke sath */
+        }
+
+        /* 1. Grayscale aur halka blur filter */
+        .img-filter-1 {
+            filter: grayscale(100%) blur(1px);
+        }
+
+        /* 2. Initial state aur hover par filter change karna */
+        .img-filter-2 {
+            filter: brightness(60%) sepia(50%);
+        }
+
+        .img-filter-2:hover {
+            filter: brightness(60%) sepia(0%);
+            /* Mouse le jane par original color aur brightness aa jayegi */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Filters MasterClass</h2>
+    <div class="container">
+        <div class="box">
+            <p>Normal Image</p>
+            <img src="demo-img.jpg" alt="Normal">
+        </div>
+        <div class="box">
+            <p>grayscale + Blur</p>
+            <img class="img-filter-1" src="demo-img2.jpg" alt="Filter 1">
+        </div>
+        <div class="box">
+            <p>Brightness & Hover Effect</p>
+            <img class="img-filter-2" src="demo-img4.jpg" alt="Filter 2">
+        </div>
+    </div>
+</body>
+
+</html>
